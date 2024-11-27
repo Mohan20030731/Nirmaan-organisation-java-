@@ -11,39 +11,52 @@ public class SimpleCalculator {
 		
 		
 		System.out.println("Enter your Choice :");
-		System.out.println("0 for add");
-		System.out.println("1 for sub");
-		System.out.println("2 for mul");
-		System.out.println("3 for div");
-		System.out.println("4 for mod");
-		
+		System.out.println("1 for add");
+		System.out.println("2 for sub");
+		System.out.println("3 for mul");
+		System.out.println("4 for div");
+		System.out.println("5 for mod");
+		System.out.println("0 for Exit");
 		int key = sc.nextInt();
-		    if(key==0) 
-		    {
-			int Total=(firstNum+secondNum);
-			System.out.println("Addition :"+Total);
+		sc.close();
+		switch (key)
+		{
+		case 1:
+	    {
+		int Total=(firstNum+secondNum);
+		System.out.println("Addition :"+Total);
+	    break;
 		    }
-			else if(key==1) 
-			{
-			int Total=(firstNum-secondNum);
-			System.out.println("Subraction :"+Total);
+		case 2:
+	    {
+		int Total=(firstNum-secondNum);
+		System.out.println("Subraction :"+Total);
+	    break;
 			}
-			else if(key==2)
-			{
-			int Total=(firstNum*secondNum);
-			System.out.println("Multiplication :"+Total);
+		case 3:
+	    {
+		int Total=(firstNum*secondNum);
+		System.out.println("Multiplication :"+Total);
+	    break;
 			}
-			else if(key==3)
-			{
-			int Total=(firstNum/secondNum);
-		    System.out.println("Division :"+Total);
+		case 4:
+	    {
+		int Total=(firstNum/secondNum);
+		System.out.println("Division :"+Total);
+	    break;
 			}
-			else if(key==4)
-			{
-		    int Total=(firstNum%secondNum);
-		    System.out.println("Modulus :"+Total);
+		case 5:
+	    {
+		int Total=(firstNum%secondNum);
+		System.out.println("Modulus :"+Total);
+	    break;
 			}
+	    case 0:
+	    {
+		System.out.println("Thankyou for using my Calulator");
+	    break;
             }
 	        }
-
+	}
+}
 
